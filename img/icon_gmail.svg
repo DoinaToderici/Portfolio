@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="18px" viewBox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>gmail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PORTOFOLIO" transform="translate(-586.000000, -4181.000000)" fill="#F2F0F1">
+            <g id="Footer" transform="translate(0.000000, 4107.000000)">
+                <g id="Group-4" transform="translate(586.000000, 70.297030)">
+                    <g id="Group-3">
+                        <g id="gmail" transform="translate(0.000000, 4.102564)">
+                            <path d="M18.9,0 L2.1,0 C0.945,0 0,0.980769231 0,2.17948718 L0,15.2564103 C0,16.4551282 0.945,17.4358974 2.1,17.4358974 L18.9,17.4358974 C20.055,17.4358974 21,16.4551282 21,15.2564103 L21,2.17948718 C21,0.980769231 20.055,0 18.9,0 L18.9,0 Z M18.1363636,14.3589744 L16.1079545,14.3589744 L16.1079545,5.33333333 L10.0227273,9.23076923 L3.9375,5.33333333 L3.9375,14.3589744 L1.90909091,14.3589744 L1.90909091,2.05128205 L3.12613636,2.05128205 L10.0227273,6.35897436 L16.9193182,2.05128205 L18.1363636,2.05128205 L18.1363636,14.3589744 L18.1363636,14.3589744 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
