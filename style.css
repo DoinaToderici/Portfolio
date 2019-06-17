@@ -352,12 +352,12 @@ p {
    color: red;
 }
 .gmail i {
-  font-size: 24px;
+  font-size: 18px;
   color:#ffffff;
-  padding: 0 5px;
+  padding: 5px 5px;
 }
 .social i {
-  font-size: 50px;
+  font-size: 40px;
   color:#ffffff;
   padding: 5px 7px;
   transition: all .5s;
