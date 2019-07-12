@@ -20,17 +20,29 @@
 </head>
 
 <body>
+
+
   <section class=" wraper">
+
     <div class="nav" id="navbar">
-      <a href="#pag_princip" ><img src="img/LOGO.png" alt="Logo" /></a>
-      <ul>
-        <li><a href="#aprop">A propos</a></li>
-        <li><a href="#proj">Projets</a></li>
-        <li><a href="#parc">Parcours</a></li>
-        <li><a href="#comp">Competences</a></li>
-        <li><a href="#cont">Contact</a></li>
-      </ul>
+      <div>
+        <a href="#pag_princip"><img src="img/LOGO.png" alt="Logo" /></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#aprop">A propos</a></li>
+          <li><a href="#proj">Projets</a></li>
+          <li><a href="#parc">Parcours</a></li>
+          <li><a href="#comp">Competences</a></li>
+          <li><a href="#cont">Contact</a></li>
+        </ul>
+      </div>
+      <!-- <div class="menu_mob"><i class="fas fa-bars"></i></div> -->
     </div>
+
+
+
+
     <div class="presentation" id="pag_princip">
       <h1>Étudiante Webdesign & développement front-end</h1>
     </div>
@@ -52,20 +64,45 @@
       </div>
     </div>
     <div class="projets" id="proj">
+      <h2>Mes Projets</h2>
       <div class="text_projets">
-        <h2>Mes Projets</h2>
-        <p>SITE-RÉNOVATION (Projet personnel)
-          <br><br>
-          • Création de la maquette<br>
-          • Création du logo de l’entreprise<br>
-          • Integration de la page d’accueil<br><br>
-          SITE - RÉPARATION VÉLO (Projet de validation des connaissances acquises)
-          <br><br>
-          • Création du wireframe du site web, charte graphique, logo,maquette<br>
-          • Integration du site web
-        </p>
-        <button onclick="openLink(`https://github.com/DoinaToderici`)">Voir plus</button>
+
+        <div class="proj_img">
+          <img src="img/img_moving.png" alt="moving">
+          <div class="overlay">
+            <p>H2H MOVING<br>Projet en cours de déroulement</p>
+            <div class="link_proj">
+              <a href="https://movingh2h.com/?fbclid=IwAR1YuBLrR0pMU1PRJT6xxicUqc4MufZTw5PmDb2FK6RgZfjZSGVHLgJ_huw"><i
+                  class="fas fa-reply"></i></a>
+              <a href="https://github.com/DoinaToderici"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="proj_img">
+          <img src="img/img_pharm.png" alt="Pharmacycle">
+          <div class="overlay">
+            <p>PHARMACYCLE<br>Projet de validation</p>
+            <div class="link_proj">
+              <a href="#"><i class="fas fa-reply"></i></a>
+              <a href="https://github.com/DoinaToderici"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="proj_img">
+          <img src="img/img_renovation.png" alt="renovation">
+          <div class="overlay">
+            <p>SITE RÉNOVATION<br>Projet en collaboration</p>
+            <div class="link_proj">
+              <a href="https://www.leonrenovation.fr/"><i class="fas fa-reply"></i></a>
+              <a href="https://github.com/DoinaToderici"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+        </div>
       </div>
+      <button class="button-projets" onclick="openLink(`https://github.com/DoinaToderici`)">Voir plus</button>
     </div>
     <div class="parcours" id="parc">
       <div class="text_parcours">
@@ -215,24 +252,20 @@
           </ul>
         </div>
       </div>
+    </div>
+    <div class="footer" id="cont">
+
+      <div class="gmail">
+        <i class="fas fa-envelope"></i>
+        <p>doina.toderici@gmail.com</p>
+      </div>
 
 
+      <div class="social">
 
-      <div class="footer" id="cont">
-
-        <div class="gmail">
-          <i class="fas fa-envelope"></i>
-          <p>doina.toderici@gmail.com</p>
-        </div>
-
-
-        <div class="social">
-
-          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></i></a>
-          <a href="https://www.linkedin.com/feed//"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/todericidoina/"><i class="fab fa-instagram"></i></a>
-
-        </div>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></i></a>
+        <a href="https://www.linkedin.com/feed//"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/todericidoina/"><i class="fab fa-instagram"></i></a>
 
       </div>
   </section>
@@ -241,3 +274,15 @@
 </body>
 
 </html>
+
+
+<!-- <p>SITE-RÉNOVATION (Projet personnel)
+          <br><br>
+          • Création de la maquette<br>
+          • Création du logo de l’entreprise<br>
+          • Integration de la page d’accueil<br><br>
+          SITE - RÉPARATION VÉLO (Projet de validation des connaissances acquises)
+          <br><br>
+          • Création du wireframe du site web, charte graphique, logo,maquette<br>
+          • Integration du site web
+        </p> -->

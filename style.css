@@ -1,22 +1,24 @@
 body {
   margin: 0;
+  font-size: 16px;
 }
 
 .wraper {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
 /* GENERAL*/
 
 button {
-  width: 272px;
-  height: 70px;
+  width: 15vw;
+  height: 7vh;
+  border-radius: 4px;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Alex Brush", cursive;
-  background-color: #CFB260;
-  transition: all .8s;
+  background-color: #cfb260;
+  transition: all 0.8s;
 }
 button:hover {
   color: #9e572a;
@@ -24,13 +26,13 @@ button:hover {
 }
 h1 {
   font-family: "Alex Brush", cursive;
-  font-size: 70px;
-  width: 350px;
+  font-size: 4.375rem;
+  width: 24%;
   color: #4a4a4a;
 }
 h2 {
-  color: #CFB260;
-  font-size: 40px;
+  color: #cfb260;
+  font-size: 2.5rem;
   font-family: "Alex Brush", cursive;
 
   margin-block-start: 0em;
@@ -40,12 +42,12 @@ h2 {
 }
 h3 {
   color: #f2f0f1;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-family: "Alex brush", cursive;
 }
 p {
   color: #727072;
-  font-size: 20px;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
 
   display: block;
@@ -65,22 +67,21 @@ p {
 
 .nav a img {
   width: 40%;
-  padding: 10px;
+  padding: 2%;
 }
-
 
 .nav {
   display: flex;
   align-items: center;
-  width: 100vw; 
+  width: 100vw;
   position: fixed;
   padding: 0 120px;
   top: 0;
   left: 0;
-   z-index: 999;
+  z-index: 999;
 }
 .sticky_nav {
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 1.5;
 }
 
@@ -92,9 +93,8 @@ p {
 }
 .nav li a {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  width: 155px;
-  color: #CFB260;
+  font-size: 1rem;
+  color: #cfb260;
   padding: 8px 16px;
   text-decoration: none;
 }
@@ -107,9 +107,10 @@ p {
   justify-content: flex-end;
 }
 .presentation h1 {
-  padding: 65px;
+  padding: 3% 5%;
   text-decoration: none;
-  border: #CFB260 solid 10px;
+  border: #cfb260 solid 10px;
+  margin-right: 8%;
 
   animation-name: from-right;
   animation-duration: 2s;
@@ -119,8 +120,12 @@ p {
 }
 
 @keyframes from-right {
-   from {    margin-right: -650px;}
-  to {margin-right: 0px;}
+  from {
+    margin-right: -650px;
+  }
+  to {
+    margin-right: 8%;
+  }
 }
 
 /* A PROPOS*/
@@ -128,19 +133,19 @@ p {
 .a_propos {
   height: 745px;
   background-color: #f2f0f1;
-
-  margin-top: 60px;
+  align-items: center;
+  margin-top: 5% !important;
   display: flex;
+  width: 90%;
+  margin: auto;
 }
 .a_propos img {
   width: 45%;
-  height: 745px;
 }
 .text {
-  width: 50%;
+  width: 45%;
   background-color: white;
-  padding: 70px 22px;
-  margin: 65px 60px 65px 0;
+  padding: 5% 2% 5% 2%;
 }
 .text h2 {
   margin: 0;
@@ -153,23 +158,90 @@ p {
 /* PROJETS*/
 .projets {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 60px;
-  background-image: url(img/img_6.png);
-  height: 100vh;
+  margin-top: 5%;
+  background-color: #f2f0f1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 7%;
+  height: 75vh;
 }
 .text_projets {
-  width: 70vw;
-  height: 475px;
-  border: #CFB260 solid 10px;
-  background-color: #ffffff;
+  width: 90%;
+  height: 70vh;
+  border: #cfb260 solid 10px;
+  background-color: #f2f0f1;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 6%;
 }
-.text_projets h2 {
-  width: 300px;
-  margin-top: -30px !important;
-  margin-left: 140px !important;
-  background-color: white;
+.proj_img {
+  height: 40vh;
+  position: relative;
+  width: 30%;
+}
+.proj_img:hover .overlay {
+  opacity: 1;
+}
+.proj_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.6); /* Black see-through */
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.overlay p {
+  color: white;
+  font-size: 20px;
   text-align: center;
+}
+.overlay i {
+  color: #f1f1f1;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 7%;
+  margin: 5px;
+  transition: 0.5s ease;
+}
+.overlay i:hover {
+  color: #cfb260;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #cfb260;
+  padding: 10%;
+  margin: 5px;
+  transition: 0.5s ease;
+}
+.link_proj {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projets h2 {
+  width: 30%;
+  margin-left: -380px !important;
+  background-color: #f2f0f1;
+  text-align: center;
+  margin-bottom: -30px !important;
+  z-index: 30;
 
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -178,33 +250,35 @@ p {
   font-weight: bold;
 }
 .text_projets p {
-  padding: 30px 80px;
-
+  padding: 8% 1%;
   display: block;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.text_projets button {
-  margin: 15px 150px;
+.button-projets {
+  display: block;
+  margin: auto;
+  margin-top: -8% !important;
 }
+
 /*PARCOURS*/
 
 .parcours {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
-  width: 1200px;
   height: 800px;
   background-image: url(img/img_12.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 90%;
+  margin: 10% auto;
 }
 .text_parcours {
   background-color: #ffffff;
-  opacity: 0.77;
+  opacity: 0.88;
   width: 875px;
   height: 610px;
 }
@@ -236,10 +310,10 @@ p {
   background-color: #f2f0f1;
 }
 .competences p {
-   color: #ffffff !important;
+  color: #ffffff !important;
 }
 .competences h2 {
-  padding: 43px 0;
+  padding: 3% 0;
   text-align: center;
 
   margin-block-start: 0em;
@@ -249,14 +323,14 @@ p {
   font-weight: bold;
 }
 .domaines {
-  width: 1080px;
+  width: 80%;
   height: 500px;
-  padding: 30px 40px;
+  padding: 3%;
   background-color: #000000;
-  opacity: 0.8;
+  opacity: 0.7;
   margin: auto;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 #design {
   width: 43%;
@@ -267,12 +341,11 @@ p {
   padding: 0 10px;
 }
 #design ul {
-   margin-block-start: 0em;
-   margin-block-end: 0em;
-   margin-inline-start: 0px;
-   margin-inline-end: 0px;
-   padding-inline-start: 0px;
-
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 #design ul li {
   display: flex;
@@ -288,81 +361,96 @@ p {
   margin: 0 10px 0 25px;
 }
 
-.progress { 
-   background-color: #CFB260;
-   height: inherit;
-   text-align: center;
- 
-   color: #ffffff;
-   font-weight: 500;
+.progress {
+  background-color: #cfb260;
+  height: inherit;
+  text-align: center;
+
+  color: #ffffff;
+  font-weight: 500;
 }
 #developpement {
   width: 43%;
 }
 #developpement h3 {
-   padding: 0 10px;
-} 
+  padding: 0 3%;
+}
 #developpement ul {
-   margin-block-start: 0em;
-   margin-block-end: 0em;
-   margin-inline-start: 0px;
-   margin-inline-end: 0px;
-   padding-inline-start: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 #developpement ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-
 }
 
 .img_h3 {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .img_h3 img {
-   height: 30px;
-   padding: 0 10px;
+  height: 30px;
+  padding: 0 10px;
 }
-
 
 .footer {
-   height: 200px;
-   background-color: #000000;
-   margin-top: 50px;
+  height: 200px;
+  background-color: #000000;
+  margin-top: 7%;
 }
 .gmail {
-   display: flex;
-   justify-content: center;
-   padding: 60px 0 0;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 0;
 }
 .gmail img {
-   padding: 0 10px;
+  padding: 0 10px;
 }
 .social {
-   display: flex;
-   justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .social img {
-   padding: 10px;
+  padding: 10px;
 }
 .social img:hover {
-   color: red;
+  color: red;
 }
 .gmail i {
-  font-size: 18px;
-  color:#ffffff;
+  font-size: 14px;
+  color: #ffffff;
   padding: 5px 5px;
 }
 .social i {
-  font-size: 40px;
-  color:#ffffff;
+  font-size: 30px;
+  color: #ffffff;
   padding: 5px 7px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .social i:hover {
-  color: #CFB260;
+  color: #cfb260;
 }
 
+@media (max-width: 600px) {
+  .nav {
+    justify-content: space-around;
+  }
+  .menu_mob i::before {
+    font-size: 3rem;
+    padding: 20%;
+  }
+  .presentation {
+    height: 650px;
+  }
+  .presentation h1 {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+  }
+}
