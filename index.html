@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Portfolio</title>
+
 
 
   <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">
@@ -13,15 +16,11 @@
   <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Nanum+Brush+Script|Roboto:400,400i,500,500i,700,700i"
     rel="stylesheet" />
 
-
-
-
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="responsive.css" />
 </head>
 
 <body>
-
-
   <section class=" wraper">
 
     <div class="nav" id="navbar">
@@ -37,16 +36,29 @@
           <li><a href="#cont">Contact</a></li>
         </ul>
       </div>
-      <!-- <div class="menu_mob"><i class="fas fa-bars"></i></div> -->
+      <div id="myMenumob" class="menu_mob">
+        <div class="closebtn">
+          <a href="javascript:void(0)" onclick="closeNav()">×</a>
+        </div>
+        <div class="mob_a">
+          <a href="#aprop" onclick="closeNav()">A propos</a>
+          <a href="#proj" onclick="closeNav()">Projets</a>
+          <a href="#parc" onclick="closeNav()">Parcours</a>
+          <a href="#comp" onclick="closeNav()">Competences</a>
+          <a href="#cont" onclick="closeNav()">Contact</a>
+        </div>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+      </div>
     </div>
-
-
-
-
     <div class="presentation" id="pag_princip">
       <h1>Étudiante Webdesign & développement front-end</h1>
     </div>
-
     <div class="a_propos" id="aprop">
       <img src="img/img_10.png" alt="image" />
       <div class="text">
@@ -60,7 +72,7 @@
           produit en ligne soit le plus efficace et le plus intuitif possible.
           Le produit doit convertir. Le produit doit se différencier.
         </p>
-        <button onclick="openLink('img/cv.pdf')">Télécharger mon CV</button>
+        <button class="button" onclick="openLink('img/cv.pdf')">Télécharger mon CV</button>
       </div>
     </div>
     <div class="projets" id="proj">
@@ -72,9 +84,9 @@
           <div class="overlay">
             <p>H2H MOVING<br>Projet en cours de déroulement</p>
             <div class="link_proj">
-              <a href="https://movingh2h.com/?fbclid=IwAR1YuBLrR0pMU1PRJT6xxicUqc4MufZTw5PmDb2FK6RgZfjZSGVHLgJ_huw"><i
-                  class="fas fa-reply"></i></a>
               <a href="https://github.com/DoinaToderici"><i class="fab fa-github"></i></a>
+              <a href="https://movingh2h.com/?fbclid=IwAR1YuBLrR0pMU1PRJT6xxicUqc4MufZTw5PmDb2FK6RgZfjZSGVHLgJ_huw">
+                <i class="fas fa-share"></i></a>
             </div>
           </div>
 
@@ -84,60 +96,50 @@
           <div class="overlay">
             <p>PHARMACYCLE<br>Projet de validation</p>
             <div class="link_proj">
-              <a href="#"><i class="fas fa-reply"></i></a>
               <a href="https://github.com/DoinaToderici"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-share"></i></a>
+
             </div>
           </div>
-
         </div>
         <div class="proj_img">
           <img src="img/img_renovation.png" alt="renovation">
           <div class="overlay">
             <p>SITE RÉNOVATION<br>Projet en collaboration</p>
             <div class="link_proj">
-              <a href="https://www.leonrenovation.fr/"><i class="fas fa-reply"></i></a>
               <a href="https://github.com/DoinaToderici"><i class="fab fa-github"></i></a>
+              <a href="https://www.leonrenovation.fr/"><i class="fas fa-share"></i></i></a>
             </div>
           </div>
 
         </div>
       </div>
-      <button class="button-projets" onclick="openLink(`https://github.com/DoinaToderici`)">Voir plus</button>
+      <button class="button button-projets" onclick="openLink(`https://github.com/DoinaToderici`)">Voir plus</button>
     </div>
     <div class="parcours" id="parc">
       <div class="text_parcours">
         <h2>Mon parcours</h2>
         <p>FORMATION DÉVELOPPEUR FRONT-END | 2019-2020<br>
           Ecole multimédia , Paris<br><br>
-
           FORMATION CONTINUE WEB DESIGN | 2018<br>
           Marcorel, Paris<br><br>
-
           CERTIFICATS DE RÉUSSITE | 2018<br>
           Openclassrooms<br><br>
-
           FORMATION CONTINUE INTEGRATION WEB | 2016<br>
           Vanar.md , Moldavie<br><br>
-
           MASTER EN COMPTABILITÉ<br>
           Université Coopératiste et Comerciale de Moldavie | 2012-2017
         </p>
       </div>
     </div>
-
-
     <div class="competences">
-
       <h2>Mes compétences & aptitudes</h2>
-
-
       <div class="domaines" id="comp">
         <div id="design">
           <div class="img_h3">
             <img src="img/icon_design.png" alt="icon_design" />
             <h3>Design</h3>
           </div>
-
           <ul>
             <li>
               <p>Sketch</p>
@@ -259,30 +261,13 @@
         <i class="fas fa-envelope"></i>
         <p>doina.toderici@gmail.com</p>
       </div>
-
-
       <div class="social">
-
         <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></i></a>
         <a href="https://www.linkedin.com/feed//"><i class="fab fa-linkedin"></i></a>
         <a href="https://www.instagram.com/todericidoina/"><i class="fab fa-instagram"></i></a>
-
       </div>
   </section>
-
   <script src="index.js"></script>
 </body>
 
 </html>
-
-
-<!-- <p>SITE-RÉNOVATION (Projet personnel)
-          <br><br>
-          • Création de la maquette<br>
-          • Création du logo de l’entreprise<br>
-          • Integration de la page d’accueil<br><br>
-          SITE - RÉPARATION VÉLO (Projet de validation des connaissances acquises)
-          <br><br>
-          • Création du wireframe du site web, charte graphique, logo,maquette<br>
-          • Integration du site web
-        </p> -->

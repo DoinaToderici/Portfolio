@@ -1,0 +1,235 @@
+@media (max-width: 600px) {
+  p {
+    font-size: 0.8rem
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .button {
+    width: 43vw;
+    font-size: 1rem;
+    margin: 10% auto;
+  }
+  .nav {
+    justify-content: space-around;
+    padding: 0;
+  }
+  .menu {
+    display: none;
+    padding: 3%;
+  }
+  .menu_mob {
+    display: block;
+    height: 45%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin-top: 72px;
+  }
+  
+  .menu_mob .mob_a a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .menu_mob .mob_a a:hover {
+    color: #cfb260;                             /*******************/
+    transition: 0.3s;
+  }
+  .mob_a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-left: 25%;
+  }
+  .menu_mob .closebtn a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    margin-left: 87%;
+    
+  }
+  .openbtn{
+    display: block;
+    padding: 3% 5%;
+  }
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  .nav a img{
+    padding: 2% 8%;
+  }
+  .presentation {
+    height: 545px;
+  }
+  .presentation h1 {
+    font-size: 3.375rem;
+    width: 84%;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+
+    animation-name: from-right;
+    animation-duration: 2s;
+
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
+  @keyframes from-right {
+    from {
+      margin-right: -650px;
+    }
+    to {
+      margin-right: 0;
+    }
+  }
+   
+                  /* APROPOS */
+
+
+  .a_propos {
+    display: block;
+    background-color: white;
+    height: 805px;
+  }
+  .a_propos img {
+    width: 100%;
+  }
+  .a_propos .text {
+    width: 100%;
+    text-align: center;
+  }
+  .a_propos .text p {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+
+                    /* PROJETS */
+
+  .projets{
+    display: block;
+    height: 155vh;
+    padding: 3%;
+    margin: 10% auto;
+  }
+  .projets h2{
+    margin: 0 !important;
+    width: 100%;
+  }   
+  .text_projets{
+    padding: 0;
+    width: 100%;
+    display: block;
+    border:none;
+  } 
+  .proj_img{
+    width: 90%;
+    margin:auto;
+    margin-top: 6%;
+
+  }             
+  .proj_img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: #cfb260 solid 4px;
+}
+.overlay{
+  margin-left: 1.2%;
+  margin-bottom: -1.1999%;
+
+}
+.link_proj i{
+  font-size: 25px;
+  margin: 10px;
+}
+.button-projets {
+  margin-top: 120% !important ;
+}
+              
+
+                  /* PARCOURS */
+
+.parcours{
+  height: 480px;
+  margin: 0 auto 10%;
+}
+.text_parcours{
+  height: inherit;
+}
+.text_parcours h2{
+  padding: 0;
+  display: block;
+  margin: 15px auto !important;
+}
+.text_parcours p{
+  padding: 20px !important;
+  margin: 0;
+  opacity: 100;
+ 
+}
+
+
+                /* COMPETENCES */
+
+
+.compentences {
+  margin: 15px auto;
+  margin-bottom: 10%;
+}
+
+.domaines{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 900px;
+  padding: 1%;
+}
+#design{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  }
+
+#developpement {
+  width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 58%;
+}
+.sketch {
+  width: 263px;
+  height: 17px;
+  margin: 0 ;
+}
+.progress{
+  font-size: 0.8rem;
+}
+.footer{
+  margin-top: 54%;
+  height: 100px;
+}
+.gmail{
+  padding: 20px 0 0;
+
+}
