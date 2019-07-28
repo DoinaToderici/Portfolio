@@ -45,6 +45,8 @@ h3 {
   color: #f2f0f1;
   font-size: 2.25rem;
   font-family: "Alex brush", cursive;
+  margin-block-start: 0;
+  margin-block-end: 0em;
 }
 p {
   color: #727072;
@@ -73,6 +75,10 @@ p {
   width: 40%;
   padding: 2%;
 }
+#logo {
+  filter: invert(99%) sepia(17%) saturate(2%) hue-rotate(96deg) brightness(106%)
+    contrast(101%);
+}
 
 .nav {
   display: flex;
@@ -87,6 +93,9 @@ p {
 .sticky_nav {
   background: #ffffff;
   opacity: 1.5;
+}
+.nav.sticky_nav #logo {
+  filter: none;
 }
 
 .nav ul {
@@ -191,7 +200,7 @@ p {
 }
 .text_projets {
   width: 90%;
-  height: 70vh;
+  height: 60vh;
   border: #cfb260 solid 10px;
   background-color: #f2f0f1;
   display: flex;
@@ -281,7 +290,7 @@ p {
 .button-projets {
   display: block;
   margin: auto;
-  margin-top: -8% !important;
+  margin-top: -10% !important;
 }
 
 /*PARCOURS*/
@@ -344,7 +353,7 @@ p {
 }
 .domaines {
   width: 80%;
-  height: 500px;
+  height: 450px;
   padding: 3%;
   background-color: #000000;
   opacity: 0.7;
@@ -358,7 +367,7 @@ p {
 
 #design h3 {
   text-align: center;
-  padding: 0 10px;
+  padding: 10px;
 }
 #design ul {
   margin-block-start: 0em;
@@ -393,7 +402,7 @@ p {
   width: 43%;
 }
 #developpement h3 {
-  padding: 0 3%;
+  padding: 10px;
 }
 #developpement ul {
   margin-block-start: 0em;

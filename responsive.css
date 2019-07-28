@@ -5,6 +5,9 @@
   h2 {
     font-size: 2rem;
   }
+  h3{
+    font-size: 1.7rem;
+  }
   .button {
     width: 43vw;
     font-size: 1rem;
@@ -13,7 +16,6 @@
   .nav {
     justify-content: space-around;
     padding: 0;
-    background-color: white;
   }
   
   .menu {
@@ -28,32 +30,30 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.85);
     overflow-x: hidden;
     transition: 0.5s;
-    margin-top: 72px;
+    margin-top: 52px;
   }
   
   .menu_mob .mob_a a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #ffffff;
+    color: white;   /*#cfb260*/
     display: block;
     transition: 0.3s;
   }
   
-  .menu_mob .mob_a a:hover {
-    color: #cfb260;                             /*******************/
-    transition: 0.3s;
-  }
+  
   #myMenumob {
     display: block;
+    height: 100vh;
   }
   .mob_a{
     display: flex;
     flex-direction: column;
-    margin-top: 15%;
+    margin-top: 45%;
     margin-left: 25%;
   }
   .menu_mob .closebtn a {
@@ -68,11 +68,15 @@
     
   }
   .openbtn{
-    
     display: block;
     padding: 7% 15%;
     border: none;
     background: transparent;
+    filter: invert(99%) sepia(17%) saturate(2%) hue-rotate(96deg) brightness(106%)
+    contrast(101%);
+  }
+  .nav.sticky_nav .openbtn{
+    filter: none;
   }
   #main {
     transition: margin-left .5s;
@@ -114,7 +118,7 @@
   .a_propos {
     display: block;
     background-color: white;
-    height: 805px;
+    height: 755px;
     padding-bottom: 50px;
   }
   .a_propos img {
@@ -169,7 +173,7 @@
   margin: 10px;
 }
 .button-projets {
-  margin-top: 120% !important ;
+  margin-top: 140% !important ;
 }
               
 
@@ -185,7 +189,7 @@
 .text_parcours h2{
   padding: 0;
   display: block;
-  margin: 15px auto !important;
+  margin: 20px auto !important;
 }
 .text_parcours p{
   padding: 20px !important;
@@ -202,6 +206,10 @@
   margin: 15px auto;
   margin-bottom: 10%;
 }
+.competences h2 {
+  padding: 7% 0;
+}
+
 
 .domaines{
   display: flex;
@@ -209,14 +217,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 900px;
+  height: 800px;
   padding: 1%;
 }
 #design{
   width: 90%;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 5% auto;
   }
 
 #developpement {
@@ -225,6 +233,9 @@
     flex-direction: column;
     margin: auto;
     height: 58%;
+}
+.img_h3 img {
+  height: 20px;
 }
 .sketch {
   width: 263px;
@@ -235,7 +246,7 @@
   font-size: 0.8rem;
 }
 .footer{
-  margin-top: 54%;
+  margin-top: 40%;
   height: 100px;
 }
 .gmail{

@@ -21,7 +21,6 @@ function openLink(link) {
 
 function openNav() {
   document.getElementById("myMenumob").style.width = "100%";
-  document.getElementById("main").style.marginRight = "";
 }
 
 function closeNav() {
