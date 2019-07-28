@@ -47,6 +47,9 @@
     color: #cfb260;                             /*******************/
     transition: 0.3s;
   }
+  #myMenumob {
+    display: block;
+  }
   .mob_a{
     display: flex;
     flex-direction: column;
@@ -67,7 +70,7 @@
   .openbtn{
     
     display: block;
-    padding: 10% 15%;
+    padding: 7% 15%;
     border: none;
     background: transparent;
   }
