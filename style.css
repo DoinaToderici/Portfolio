@@ -308,7 +308,7 @@ p {
 }
 .text_parcours {
   width: 750px;
-  height: 80vh;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.6);
 }
 .text_parcours h2 {
