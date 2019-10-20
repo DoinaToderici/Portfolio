@@ -308,7 +308,7 @@ p {
 }
 .text_parcours {
   width: 750px;
-  height: 490px;
+  height: 64vh;
   background: rgba(0, 0, 0, 0.6);
 }
 .text_parcours h2 {
@@ -331,6 +331,14 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+.certificats {
+  color: #cec19d;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.certificats:hover {
+  text-decoration: underline;
 }
 
 .competences {
